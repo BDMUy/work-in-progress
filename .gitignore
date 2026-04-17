@@ -1,11 +1,13 @@
+# dependencies
+node_modules/
+
 # build output
 dist/
+.vercel/
+.output/
 
 # generated types
 .astro/
-
-# dependencies
-node_modules/
 
 # logs
 npm-debug.log*
@@ -15,10 +17,20 @@ pnpm-debug.log*
 
 # environment variables
 .env
-.env.production
+.env.*
+!.env.example
 
-# macOS-specific files
+# OS-specific files
 .DS_Store
+Thumbs.db
 
-# jetbrains setting folder
+# Editor-specific files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
