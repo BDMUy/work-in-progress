@@ -8,7 +8,7 @@ export default function Roster() {
                 
                 <div className="roster-card slide-up">
                     <div className="img-wrapper">
-                        <img src="/assets/navi.png" alt="Guild Master Navi" />
+                        <img src={`${import.meta.env.BASE_URL}assets/navi.png`} alt="Guild Master Navi" />
                         <div className="card-glow"></div>
                     </div>
                     <div className="card-info">
@@ -19,7 +19,7 @@ export default function Roster() {
 
                 <div className="roster-card slide-up" style={{ animationDelay: '0.1s' }}>
                     <div className="img-wrapper">
-                        <img src="/assets/trinley.png" alt="Main Officer Trinley" />
+                        <img src={`${import.meta.env.BASE_URL}assets/trinley.png`} alt="Main Officer Trinley" />
                         <div className="card-glow"></div>
                     </div>
                     <div className="card-info">
@@ -30,7 +30,7 @@ export default function Roster() {
 
                 <div className="roster-card slide-up" style={{ animationDelay: '0.2s' }}>
                     <div className="img-wrapper">
-                        <img src="/assets/kawori.png" alt="Assistant Kawori" />
+                        <img src={`${import.meta.env.BASE_URL}assets/kawori.png`} alt="Assistant Kawori" />
                         <div className="card-glow"></div>
                     </div>
                     <div className="card-info">
@@ -41,7 +41,7 @@ export default function Roster() {
 
                 <div className="roster-card slide-up" style={{ animationDelay: '0.3s' }}>
                     <div className="img-wrapper">
-                        <img src="/assets/jhin.png" alt="Helper Jhin" />
+                        <img src={`${import.meta.env.BASE_URL}assets/jhin.png`} alt="Helper Jhin" />
                         <div className="card-glow"></div>
                     </div>
                     <div className="card-info">
