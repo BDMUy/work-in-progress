@@ -1,0 +1,82 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content="Guild de World of Warcraft 'Work in progress'. Roster, requisitos de raid, horarios y comunidad activa. ¡Únete a nosotros!">
+    <meta name="keywords" content="World of Warcraft, WoW, Guild, Work in progress, Raid, Roster, Gaming Community">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://work-in-progress-guild.vercel.app/">
+    <meta property="og:title" content="Work in progress - Guild de World of Warcraft">
+    <meta property="og:description" content="Comunidad y equipo de raid de WoW. Consulta nuestro roster, reglas y únete a nuestras filas.">
+    <meta property="og:image" content="/og-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Work in progress - Guild de World of Warcraft">
+    <meta property="twitter:description" content="Comunidad y equipo de raid de WoW. Consulta nuestro roster, reglas y únete a nuestras filas.">
+    <meta property="twitter:image" content="/og-preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/wipicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Work in progress",
+      "alternateName": "WIP Guild",
+      "url": "https://work-in-progress-guild.vercel.app/",
+      "logo": "https://work-in-progress-guild.vercel.app/favicon.png",
+      "description": "Equipo de raid y comunidad de World of Warcraft.",
+      "sameAs": [
+        "https://www.warcraftlogs.com/guild/id/tu-guild-id"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <slot />
+
+    <script>
+        // Scroll Animations (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements to trigger CSS animations on scroll
+        document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
