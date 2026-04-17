@@ -22,6 +22,15 @@ export default function Schedule() {
                 <a href="https://forms.gle/1iPS5LNcwS5uwsE58" target="_blank" rel="noopener noreferrer" className="btn-primary full-width">
                     Ir al formulario
                 </a>
+
+                <div className="external-links">
+                    <a href="https://raider.io/guilds/us/quelthalas/Work%20in%20progress" target="_blank" rel="noopener noreferrer" className="ext-link raiderio" title="Raider.io Profile">
+                        <img src="/assets/raiderio.svg" alt="Raider.io" />
+                    </a>
+                    <a href="https://www.warcraftlogs.com/guild/us/quelthalas/work%20in%20progress" target="_blank" rel="noopener noreferrer" className="ext-link wcl" title="Warcraft Logs Profile">
+                        <img src="/assets/warcraftlogs.png" alt="Warcraft Logs" />
+                    </a>
+                </div>
             </section>
         </div>
     );
