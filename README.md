@@ -1,32 +1,46 @@
-# Work in progress - World of Warcraft Guild
+# Astro Starter Kit: Basics
 
-Landing page oficial de la guild **Work in progress** (US-Quel'Thalas).
+```sh
+npm create astro@latest -- --template basics
+```
 
-## 🚀 Tecnologías
-- **Framework**: [Astro 5](https://astro.build/)
-- **UI**: [React](https://react.dev/)
-- **Estilos**: Vanilla CSS (Premium Dark Theme)
-- **Reglas**: [Markdown](public/reglas.md) para gestión fácil de contenido.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🛠️ Estructura del Proyecto
+## 🚀 Project Structure
 
-- `src/components/`: Componentes React (Hero, Roster, Requirements, Schedule).
-- `src/layouts/`: Plantilla base Astro.
-- `src/pages/`: Página principal.
-- `public/`: Assets, iconos y el archivo de reglas de raid.
+Inside of your Astro project, you'll see the following folders and files:
 
-## 🧞 Comandos
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
+```
 
-| Comando | Acción |
-| :--- | :--- |
-| `npm install` | Instala dependencias |
-| `npm run dev` | Inicia servidor local en `localhost:4321` |
-| `npm run build` | Genera el sitio estático para producción en `./dist/` |
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🔗 Enlaces de Interés
-- [Raider.io Profile](https://raider.io/guilds/us/quelthalas/Work%20in%20progress)
-- [Warcraft Logs](https://www.warcraftlogs.com/guild/us/quelthalas/work%20in%20progress)
-- [Formulario de Ingreso](https://forms.gle/1iPS5LNcwS5uwsE58)
+## 🧞 Commands
 
----
-*Hecho por la comunidad de Work in progress.*
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
