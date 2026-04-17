@@ -5,8 +5,8 @@ export default function Hero() {
         <header className="hero">
             <div className="hero-video-bg">
                 <video 
-                    src={`${import.meta.env.BASE_URL}assets/banner.mp4`}
-                    poster={`${import.meta.env.BASE_URL}poster.png`}
+                    src="/assets/banner.mp4" 
+                    poster="/poster.png"
                     autoPlay 
                     loop 
                     muted 

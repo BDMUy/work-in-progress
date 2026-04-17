@@ -25,10 +25,10 @@ export default function Schedule() {
 
                 <div className="external-links">
                     <a href="https://raider.io/guilds/us/quelthalas/Work%20in%20progress" target="_blank" rel="noopener noreferrer" className="ext-link raiderio" title="Raider.io Profile">
-                        <img src={`${import.meta.env.BASE_URL}assets/raiderio.svg`} alt="Raider.io" />
+                        <img src="/assets/raiderio.svg" alt="Raider.io" />
                     </a>
                     <a href="https://www.warcraftlogs.com/guild/us/quelthalas/work%20in%20progress" target="_blank" rel="noopener noreferrer" className="ext-link wcl" title="Warcraft Logs Profile">
-                        <img src={`${import.meta.env.BASE_URL}assets/warcraftlogs.png`} alt="Warcraft Logs" />
+                        <img src="/assets/warcraftlogs.png" alt="Warcraft Logs" />
                     </a>
                 </div>
             </section>
