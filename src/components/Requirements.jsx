@@ -6,7 +6,7 @@ export default function Requirements() {
 
     const loadRules = async () => {
         try {
-            const response = await fetch('/reglas.md');
+            const response = await fetch(`${import.meta.env.BASE_URL}reglas.md`);
             if (response.ok) {
                 const text = await response.text();
                 // Ensure marked is available globally as setup in layout
